@@ -24,19 +24,19 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
-- [ ] What does AJAX stand for?
-> Answer:
-- [ ] What are `controlled components` in React?
-> Answer:
+- [X] Explain benefit(s) using `client-side routing`?
+> Answer: Client-side routing is managed through Javascript on the user's side. Instead of waiting for a server to provide content it is provided via the url. This makes a website's page respond quickly to the user. A faster response time means that the user will instantly be connected to any content provided by web page and as such is the equivalent of business success. 
+- [X] What does AJAX stand for?
+> Answer: Asynchronus JavaScript and XML. It is a web development technique used to send and retrieve  data in the background without refreshing a webpage. 
+- [X] What are `controlled components` in React?
+> Answer: Controlled components handle input via the state vs uncontrolled components that do not. 
 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
+- [X] Create a forked copy of this project.
 - [ ] Add TL as collaborator on GitHub.
 - [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [ ] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
