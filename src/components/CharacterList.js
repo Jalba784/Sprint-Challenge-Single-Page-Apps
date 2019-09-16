@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard.js"
+import { Link } from "react-router-dom";
+
+
 
 
 const CharacterList = () => {
@@ -21,6 +24,7 @@ const CharacterList = () => {
         {character.map(item => {
           return <CharacterCard key={item.id} img={item.image} name={item.name} species={item.species} status={item.status} />
         })}
+        <Link to="/">Home</Link>
       </div>
   );
 }

@@ -10,8 +10,8 @@ export default function App() {
     <main>
       <Header />
       {/* <TabNav /> */}
-      <Route path="/" component={ TabExampleBasic }  />
-      <Route path="/characters" component={ CharacterList }  />
+      <Route exact path="/" component={ TabExampleBasic }  />
+      <Route path="/characters" component={ CharacterList } disable />
     </main>
   );
 }
