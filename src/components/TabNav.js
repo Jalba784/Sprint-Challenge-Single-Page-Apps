@@ -11,8 +11,13 @@ import { Tab } from "semantic-ui-react";
 // https://react.semantic-ui.com/elements/button/
 // https://react.semantic-ui.com/collections/breadcrumb/
 
+
 const panes = [
-    { menuItem: 'Home Page', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
+    { menuItem: 'Home Page', render: (props) => <Tab.Pane>
+    <h1>Welcome to the ultimate fan site!</h1>
+    <br/>
+    <img src="https://rick-api.herokuapp.com/api/character/avatar/1.jpeg" alt="Home-pic" />
+    </Tab.Pane> },
     { menuItem: 'Characters', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
     { menuItem: 'Locations', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
     { menuItem: 'Episodes', render: () => <Tab.Pane>Tab 4 Content</Tab.Pane> },
@@ -20,7 +25,7 @@ const panes = [
 
 const TabExampleBasic = () => <Tab panes={panes}/>
 
-export default TabExampleBasic;
+export default TabExampleBasic
 
 // export default function TabNav() {
 //
