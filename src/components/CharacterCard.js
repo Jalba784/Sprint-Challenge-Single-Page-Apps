@@ -11,8 +11,3 @@ const CardExampleCardProps = (props) => (
 )
 
 export default CardExampleCardProps;
-
-
-// export default function CharacterCard() {
-//   return <span>todo: character</span>;
-// }

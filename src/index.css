@@ -44,9 +44,14 @@ header h1 {
 .main-pic {
   border-radius: 50%;
   margin-left: 35%;
+  margin-top: 20px;
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.charac-title {
+  margin: 0px 0px 0px 45%;
+  font-size: larger;
 }
