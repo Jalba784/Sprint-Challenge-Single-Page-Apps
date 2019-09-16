@@ -37,3 +37,11 @@ main {
 header h1 {
   text-align: center;
 }
+
+.main-title {
+  text-align: center;
+}
+.main-pic {
+  border-radius: 50%;
+  margin-left: 35%;
+}

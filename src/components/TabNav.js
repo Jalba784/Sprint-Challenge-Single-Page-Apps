@@ -2,6 +2,7 @@ import React from "react";
 // import { Tab, Menu, Icon } from "semantic-ui-react";
 import { Tab } from "semantic-ui-react";
 // import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 // TODO: Add missing menu/tabs/nav below
 
@@ -14,9 +15,9 @@ import { Tab } from "semantic-ui-react";
 
 const panes = [
     { menuItem: 'Home Page', render: (props) => <Tab.Pane>
-    <h1>Welcome to the ultimate fan site!</h1>
+    <h1 className="main-title">Welcome to the ultimate fan site!</h1>
     <br/>
-    <img src="https://rick-api.herokuapp.com/api/character/avatar/1.jpeg" alt="Home-pic" />
+    <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/1.jpeg" alt="Home-pic" />
     </Tab.Pane> },
     { menuItem: 'Characters', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
     { menuItem: 'Locations', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
