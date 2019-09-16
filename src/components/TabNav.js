@@ -2,7 +2,7 @@ import React from "react";
 // import { Tab, Menu, Icon } from "semantic-ui-react";
 import { Tab } from "semantic-ui-react";
 // import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 // TODO: Add missing menu/tabs/nav below
 

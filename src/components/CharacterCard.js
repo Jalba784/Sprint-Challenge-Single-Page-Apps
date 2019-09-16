@@ -6,7 +6,7 @@ const CardExampleCardProps = (props) => (
       image={props.img}
       header={props.name}
       meta={props.species}
-      description={props.created}
+      description={props.status}
     />
 )
 
