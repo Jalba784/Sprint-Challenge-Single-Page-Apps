@@ -31,8 +31,15 @@ const panes = [
         <br/>
         <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/3.jpeg" />
     </Tab.Pane> },
-    { menuItem: 'Episodes', render: () => <Tab.Pane>Tab 4 Content</Tab.Pane> },
+    { menuItem: 'Episodes', render: () =>
+    <Tab.Pane>
+        <Link className="charac-title" to="/location">Enter Episodes</Link>
+    <br/>
+    <img className="main-pic" src="https://rickandmortyapi.com/api/character/avatar/7.jpeg" />
+    </Tab.Pane> },
 ]
+
+
 
 const TabExampleBasic = () => <Tab panes={panes}/>
 

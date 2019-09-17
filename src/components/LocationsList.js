@@ -22,7 +22,6 @@ const LocationsList = (props) => {
                 })}
             </div>
 
-
             <HomeLink>
                 <Link to="/">Home</Link>
             </HomeLink>

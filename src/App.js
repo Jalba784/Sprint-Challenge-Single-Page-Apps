@@ -31,7 +31,7 @@ export default function App() {
         }))
   },[])
 
-  console.log(location);
+  console.log(info);
 
 
   return (
