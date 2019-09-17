@@ -9,4 +9,4 @@ const EpisodeCard = (props) => (
     />
 )
 
-export default LocationCard;
+export default EpisodeCard;
