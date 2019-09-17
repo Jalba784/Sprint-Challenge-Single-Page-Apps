@@ -19,12 +19,18 @@ const panes = [
     <br/>
     <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/1.jpeg" alt="Home-pic" />
     </Tab.Pane> },
-    { menuItem: 'Characters', render: () => <Tab.Pane>
-            <Link className="charac-title" to="/characters">Enter Characters</Link>
-            <br/>
-            <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/2.jpeg" alt="location-pic"/>
+    { menuItem: 'Characters', render: () =>
+    <Tab.Pane>
+        <Link className="charac-title" to="/characters">Enter Characters</Link>
+        <br/>
+        <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/2.jpeg" alt="location-pic"/>
     </Tab.Pane> },
-    { menuItem: 'Locations', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+    { menuItem: 'Locations', render: () =>
+    <Tab.Pane>
+        <Link className="charac-title" to="/location">Enter Locations</Link>
+        <br/>
+        <img className="main-pic" src="https://rick-api.herokuapp.com/api/character/avatar/3.jpeg" />
+    </Tab.Pane> },
     { menuItem: 'Episodes', render: () => <Tab.Pane>Tab 4 Content</Tab.Pane> },
 ]
 

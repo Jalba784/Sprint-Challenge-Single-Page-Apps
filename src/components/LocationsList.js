@@ -1,24 +1,27 @@
-// import React, { useEffect, useState } from "react";
-// // import axios from "axios";
-// import location from "./CharacterList.js"
-//
-// const LocationsList = () => {
-//     console.log(location);
-//     // const [location, setLocation] = useState([]);
-//
-//     // useEffect(() => {
-//     //     axios.get('https://rickandmortyapi.com/api/location')
-//     //         .then(res => {
-//     //             setLocation(res.data.results)
-//     //         })
-//     //         .catch(err => console.log(err))
-//     // }, [])
-//     // console.log(location);
-//
-//     return (
-//         <div></div>
-//     );
-// }
-//
-// export default LocationsList;
-// // export default function LocationsList() {}
+import React from "react";
+import location from "./CharacterList.js"
+import { Link } from "react-router-dom";
+import styled from "styled-components"
+
+
+const HomeLink = styled.h3`
+  text-align: center;
+  padding: 20px;
+`;
+
+const LocationsList = (props) => {
+    return (
+        <div>
+            <HomeLink>
+                <Link to="/">Home</Link>
+            </HomeLink>
+
+            <HomeLink>
+                <Link to="/">Home</Link>
+            </HomeLink>
+        </div>
+    );
+}
+
+export default LocationsList;
+// export default function LocationsList() {}
