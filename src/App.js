@@ -8,14 +8,20 @@ import axios from "axios";
 
 export default function App() {
   const [info, setInfo] = useState([]);
+  const [location, setLocation] = useState([]);
 
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/character')
         .then(res => {
           setInfo(res.data.results)
+          setLocation(res.data.results)
         })
         .catch(err => console.log(err))
   }, [])
+
+  console.log(location);
+  // console.log(info.location);
+
   return (
     <main>
       <Header />
