@@ -11,17 +11,28 @@ export default function App() {
   const [info, setInfo] = useState([]);
   const [location, setLocation] = useState([]);
 
+  // useEffect(() => {
+  //   axios.get('https://rickandmortyapi.com/api/character')
+  //   axios.get('https://rickandmortyapi.com/api/location')
+  //       .then(res => {
+  //         setInfo(res.data.results)
+  //       })
+  //       .catch(err => console.log(err))
+  // }, [])
+
   useEffect(() => {
-    axios.get('https://rickandmortyapi.com/api/character')
-        .then(res => {
-          setInfo(res.data.results)
-          setLocation(res.data.results)
-        })
-        .catch(err => console.log(err))
-  }, [])
+    axios.all([
+      axios.get('https://rickandmortyapi.com/api/character'),
+      axios.get('https://rickandmortyapi.com/api/location')
+    ])
+        .then(axios.spread((cRes, lRes) =>{
+          setInfo(cRes.data.results)
+          setLocation(lRes.data.results)
+        }))
+  },[])
 
   console.log(location);
-  // console.log(info.location);
+
 
   return (
     <main>

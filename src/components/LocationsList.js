@@ -1,5 +1,5 @@
 import React from "react";
-import location from "./CharacterList.js"
+import LocationCard from "./LocationCard.js";
 import { Link } from "react-router-dom";
 import styled from "styled-components"
 
@@ -15,6 +15,13 @@ const LocationsList = (props) => {
             <HomeLink>
                 <Link to="/">Home</Link>
             </HomeLink>
+
+            <div className="cards">
+                {props.location.map(item => {
+                    return <LocationCard  key={item.id} name={item.name} type={item.type} dimension={item.dimension} />
+                })}
+            </div>
+
 
             <HomeLink>
                 <Link to="/">Home</Link>
