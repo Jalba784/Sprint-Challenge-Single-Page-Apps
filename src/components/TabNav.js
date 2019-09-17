@@ -33,7 +33,7 @@ const panes = [
     </Tab.Pane> },
     { menuItem: 'Episodes', render: () =>
     <Tab.Pane>
-        <Link className="charac-title" to="/location">Enter Episodes</Link>
+        <Link className="charac-title" to="/episode">Enter Episodes</Link>
     <br/>
     <img className="main-pic" src="https://rickandmortyapi.com/api/character/avatar/7.jpeg" />
     </Tab.Pane> },

@@ -10,28 +10,22 @@ import axios from "axios";
 export default function App() {
   const [info, setInfo] = useState([]);
   const [location, setLocation] = useState([]);
-
-  // useEffect(() => {
-  //   axios.get('https://rickandmortyapi.com/api/character')
-  //   axios.get('https://rickandmortyapi.com/api/location')
-  //       .then(res => {
-  //         setInfo(res.data.results)
-  //       })
-  //       .catch(err => console.log(err))
-  // }, [])
+  const [episode, setEpisode] = useState([]);
 
   useEffect(() => {
     axios.all([
       axios.get('https://rickandmortyapi.com/api/character'),
-      axios.get('https://rickandmortyapi.com/api/location')
+      axios.get('https://rickandmortyapi.com/api/location'),
+      axios.get('https://rickandmortyapi.com/api/episode')
     ])
-        .then(axios.spread((cRes, lRes) =>{
+        .then(axios.spread((cRes, lRes, eRes) =>{
           setInfo(cRes.data.results)
           setLocation(lRes.data.results)
+          setEpisode(eRes.data.results)
         }))
   },[])
 
-  console.log(info);
+  console.log(episode);
 
 
   return (
