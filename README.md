@@ -24,27 +24,27 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
-- [ ] What does AJAX stand for?
-> Answer:
-- [ ] What are `controlled components` in React?
-> Answer:
+- [X] Explain benefit(s) using `client-side routing`?
+> Answer: Client-side routing is managed through Javascript on the user's side. Instead of waiting for a server to provide content it is provided via the url. This makes a website's page respond quickly to the user. A faster response time means that the user will instantly be connected to any content provided by web page and as such is the equivalent of business success. 
+- [X] What does AJAX stand for?
+> Answer: Asynchronus JavaScript and XML. It is a web development technique used to send and retrieve  data in the background without refreshing a webpage. 
+- [X] What are `controlled components` in React?
+> Answer: Controlled components handle input via the state vs uncontrolled components that do not. 
 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on GitHub.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on this branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
-- [ ] **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ] **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
-- [ ] **RUN** `yarn start` or `npm start` to fire up your React application.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on GitHub.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [X] Implement the project on this branch, committing changes regularly.
+- [X] Push commits: `git push origin <firstName-lastName>`.
+- [X] **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [X] **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
+- [X] **RUN** `yarn start` or `npm start` to fire up your React application.
 
 
 #### Exceeded rate limits?
@@ -90,7 +90,7 @@ Create 3 page components to display data from 3 API endpoints:
 - `https://rickandmortyapi.com/api/location/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-locations)
 - `https://rickandmortyapi.com/api/episode/` - [`docs`](https://rickandmortyapi.com/documentation/#get-all-episodes)
 - You will need to add a EpisodeList and EpisodeCard component yourself.
-- [ ] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
+- [X] Read the [Rick & Morty API](https://rickandmortyapi.com/documentation/) docs.
 - [ ] Create a component to show a grid of data from the API.
   - [ ] Include `useState`, `useEffect`.
   - [ ] Use `Axios` (or `fetch`) to make a GET request to the 3 endpoints.

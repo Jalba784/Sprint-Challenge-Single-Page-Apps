@@ -1,5 +1,5 @@
 import React from "react";
-import LocationCard from "./LocationCard.js";
+import EpisodeCard from "./EpisodeCard.js";
 import { Link } from "react-router-dom";
 import styled from "styled-components"
 
@@ -9,7 +9,7 @@ const HomeLink = styled.h3`
   padding: 20px;
 `;
 
-const LocationsList = (props) => {
+const EpisodeList = (props) => {
     return (
         <div>
             <HomeLink>
@@ -17,8 +17,8 @@ const LocationsList = (props) => {
             </HomeLink>
 
             <div className="cards">
-                {props.location.map(item => {
-                    return <LocationCard  key={item.id} name={item.name} type={item.type} dimension={item.dimension} />
+                {props.episode.map(item => {
+                    return <EpisodeCard  key={item.id} name={item.name} air_date={`Aired on ${item.air_date}`} episode={`Episode #: ${item.episode}`} />
                 })}
             </div>
 
@@ -29,5 +29,4 @@ const LocationsList = (props) => {
     );
 }
 
-export default LocationsList;
-// export default function LocationsList() {}
+export default EpisodeList;
